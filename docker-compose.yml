@@ -8,7 +8,7 @@ services:
         tty: true
         stdin_open: true
         ports:
-            - 8000:8000
+            - 3000:3000
         volumes:
             - .:/code
         depends_on:
@@ -19,7 +19,7 @@ services:
         environment:
             - POSTGRES_USER=user
             - POSTGRES_PASSWORD=password
-            - POSTGRES_DB=database
+            - POSTGRES_DB=code_development
         volumes:
             - db:/var/lib/postgresql/data
         ports:
