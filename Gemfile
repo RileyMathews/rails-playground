@@ -74,3 +74,5 @@ group :test do
 end
 
 gem 'rubocop', '~> 1.48', group: :development
+
+gem "solargraph", "~> 0.48.0", :group => :development
